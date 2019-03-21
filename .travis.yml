@@ -2,7 +2,7 @@ language: java
 
 addons:
   sonarcloud:
-    organization: "JohanCampion-github"
+    organization: "johancampion-github"
     apt:
       update: true
       sources:
