@@ -141,4 +141,124 @@ public class EmployeServiceTest {
         EmployeException e = Assertions.assertThrows(EmployeException.class, () -> employeService.embaucheEmploye(nom, prenom, poste, niveauEtude, tempsPartiel));
         Assertions.assertEquals("Limite des 100000 matricules atteinte !", e.getMessage());
     }
+
+    @Test
+    public void testCalculPerformanceCommercialUnder20() throws EmployeException {
+        //Given
+        String matricule = "C00001";
+        Long caTraite = 200L;
+        Long objectifCa = 2000L;
+        Employe e = new Employe();
+        e.setMatricule(matricule);
+        e.setPerformance(3);
+        Integer performanceExpect = 1;
+        when(employeRepository.findByMatricule("C00001")).thenReturn(e);
+        when(employeRepository.avgPerformanceWhereMatriculeStartsWith("C")).thenReturn((double) 2);
+
+        //When
+        employeService.calculPerformanceCommercial(matricule,caTraite,objectifCa);
+
+        //Then
+        //Then
+        ArgumentCaptor<Employe> employeArgumentCaptor = ArgumentCaptor.forClass(Employe.class);
+        verify(employeRepository, times(1)).save(employeArgumentCaptor.capture());
+        Assertions.assertEquals(performanceExpect, employeArgumentCaptor.getValue().getPerformance());
+
+    }
+
+    @Test
+    public void testCalculPerformanceCommercialUnder5() throws EmployeException {
+        //Given
+        String matricule = "C00001";
+        Long caTraite = 900L;
+        Long objectifCa = 1000L;
+        Employe e = new Employe();
+        e.setMatricule(matricule);
+        e.setPerformance(3);
+        Integer performanceExpect = 1;
+        when(employeRepository.findByMatricule("C00001")).thenReturn(e);
+        when(employeRepository.avgPerformanceWhereMatriculeStartsWith("C")).thenReturn((double) 2);
+
+        //When
+        employeService.calculPerformanceCommercial(matricule,caTraite,objectifCa);
+
+        //Then
+        //Then
+        ArgumentCaptor<Employe> employeArgumentCaptor = ArgumentCaptor.forClass(Employe.class);
+        verify(employeRepository, times(1)).save(employeArgumentCaptor.capture());
+        Assertions.assertEquals(performanceExpect, employeArgumentCaptor.getValue().getPerformance());
+
+    }
+
+    @Test
+    public void testCalculPerformanceCommercialSame() throws EmployeException {
+        //Given
+        String matricule = "C00001";
+        Long caTraite = 1000L;
+        Long objectifCa = 1000L;
+        Employe e = new Employe();
+        e.setMatricule(matricule);
+        e.setPerformance(3);
+        Integer performanceExpect = 4;
+        when(employeRepository.findByMatricule("C00001")).thenReturn(e);
+        when(employeRepository.avgPerformanceWhereMatriculeStartsWith("C")).thenReturn((double) 2);
+
+        //When
+        employeService.calculPerformanceCommercial(matricule,caTraite,objectifCa);
+
+        //Then
+        //Then
+        ArgumentCaptor<Employe> employeArgumentCaptor = ArgumentCaptor.forClass(Employe.class);
+        verify(employeRepository, times(1)).save(employeArgumentCaptor.capture());
+        Assertions.assertEquals(performanceExpect, employeArgumentCaptor.getValue().getPerformance());
+
+    }
+
+    @Test
+    public void testCalculPerformanceCommercialPlus5() throws EmployeException {
+        //Given
+        String matricule = "C00001";
+        Long caTraite = 1100L;
+        Long objectifCa = 1000L;
+        Employe e = new Employe();
+        e.setMatricule(matricule);
+        e.setPerformance(3);
+        Integer performanceExpect = 4;
+        when(employeRepository.findByMatricule("C00001")).thenReturn(e);
+        when(employeRepository.avgPerformanceWhereMatriculeStartsWith("C")).thenReturn((double) 4);
+
+        //When
+        employeService.calculPerformanceCommercial(matricule,caTraite,objectifCa);
+
+        //Then
+        //Then
+        ArgumentCaptor<Employe> employeArgumentCaptor = ArgumentCaptor.forClass(Employe.class);
+        verify(employeRepository, times(1)).save(employeArgumentCaptor.capture());
+        Assertions.assertEquals(performanceExpect, employeArgumentCaptor.getValue().getPerformance());
+
+    }
+
+    @Test
+    public void testCalculPerformanceCommercialPlus20() throws EmployeException {
+        //Given
+        String matricule = "C00001";
+        Long caTraite = 1500L;
+        Long objectifCa = 1000L;
+        Employe e = new Employe();
+        e.setMatricule(matricule);
+        e.setPerformance(3);
+        Integer performanceExpect = 8;
+        when(employeRepository.findByMatricule("C00001")).thenReturn(e);
+        when(employeRepository.avgPerformanceWhereMatriculeStartsWith("C")).thenReturn((double) 2);
+
+        //When
+        employeService.calculPerformanceCommercial(matricule,caTraite,objectifCa);
+
+        //Then
+        //Then
+        ArgumentCaptor<Employe> employeArgumentCaptor = ArgumentCaptor.forClass(Employe.class);
+        verify(employeRepository, times(1)).save(employeArgumentCaptor.capture());
+        Assertions.assertEquals(performanceExpect, employeArgumentCaptor.getValue().getPerformance());
+
+    }
 }

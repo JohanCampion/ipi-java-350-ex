@@ -1,0 +1,54 @@
+2019-03-21 11:51:58 - INFO  - Starting EmployeStepDefinitions on FR-L3032818 with PID 19676 (started by johan.campion in C:\Users\johan.campion\IdeaProjects\ipi-java-350-ex)
+2019-03-21 11:51:58 - INFO  - No active profile set, falling back to default profiles: default
+2019-03-21 11:52:03 - INFO  - Started EmployeStepDefinitions in 4.735 seconds (JVM running for 7.539)
+2019-03-21 11:52:03 - INFO  - Embauche de l'employé John Doe diplômé de CAP en tant que TECHNICIEN avec un taux d'activité de 1.0 
+2019-03-21 11:52:03 - INFO  - Starting EmployeRepositoryTest on FR-L3032818 with PID 19676 (started by johan.campion in C:\Users\johan.campion\IdeaProjects\ipi-java-350-ex)
+2019-03-21 11:52:03 - INFO  - No active profile set, falling back to default profiles: default
+2019-03-21 11:52:04 - INFO  - Started EmployeRepositoryTest in 0.765 seconds (JVM running for 8.866)
+2019-03-21 11:52:04 - INFO  - Starting EmployeServiceIntegrationTest on FR-L3032818 with PID 19676 (started by johan.campion in C:\Users\johan.campion\IdeaProjects\ipi-java-350-ex)
+2019-03-21 11:52:04 - INFO  - No active profile set, falling back to default profiles: default
+2019-03-21 11:52:05 - INFO  - Started EmployeServiceIntegrationTest in 0.812 seconds (JVM running for 9.859)
+2019-03-21 11:52:05 - INFO  - Embauche de l'employé John Doe diplômé de BTS_IUT en tant que TECHNICIEN avec un taux d'activité de 1.0 
+2019-03-21 11:52:05 - INFO  - Embauche de l'employé John Doe diplômé de MASTER en tant que MANAGER avec un taux d'activité de 0.5 
+2019-03-21 11:52:05 - INFO  - Embauche de l'employé John Doe diplômé de MASTER en tant que MANAGER avec un taux d'activité de 0.5 
+2019-03-21 11:52:05 - ERROR - Limite des 100000 matricules atteinte !
+2019-03-21 11:52:05 - INFO  - Embauche de l'employé John Doe diplômé de MASTER en tant que MANAGER avec un taux d'activité de 0.5 
+2019-03-21 11:52:05 - INFO  - Embauche de l'employé John Doe diplômé de BTS_IUT en tant que TECHNICIEN avec un taux d'activité de 1.0 
+2019-03-21 11:52:05 - INFO  - Embauche de l'employé John Doe diplômé de MASTER en tant que MANAGER avec un taux d'activité de 0.5 
+2019-03-21 11:52:05 - ERROR - L'employé de matricule M00001 existe déjà en BDD
+2019-03-21 11:52:51 - INFO  - Starting EmployeStepDefinitions on FR-L3032818 with PID 38480 (started by johan.campion in C:\Users\johan.campion\IdeaProjects\ipi-java-350-ex)
+2019-03-21 11:52:51 - INFO  - No active profile set, falling back to default profiles: default
+2019-03-21 11:52:55 - INFO  - Started EmployeStepDefinitions in 4.452 seconds (JVM running for 6.974)
+2019-03-21 11:52:55 - INFO  - Embauche de l'employé John Doe diplômé de CAP en tant que TECHNICIEN avec un taux d'activité de 1.0 
+2019-03-21 11:52:56 - INFO  - Starting EmployeRepositoryTest on FR-L3032818 with PID 38480 (started by johan.campion in C:\Users\johan.campion\IdeaProjects\ipi-java-350-ex)
+2019-03-21 11:52:56 - INFO  - No active profile set, falling back to default profiles: default
+2019-03-21 11:52:56 - INFO  - Started EmployeRepositoryTest in 0.703 seconds (JVM running for 8.162)
+2019-03-21 11:52:56 - INFO  - Starting EmployeServiceIntegrationTest on FR-L3032818 with PID 38480 (started by johan.campion in C:\Users\johan.campion\IdeaProjects\ipi-java-350-ex)
+2019-03-21 11:52:56 - INFO  - No active profile set, falling back to default profiles: default
+2019-03-21 11:52:57 - INFO  - Started EmployeServiceIntegrationTest in 0.796 seconds (JVM running for 9.146)
+2019-03-21 11:52:57 - INFO  - Embauche de l'employé John Doe diplômé de BTS_IUT en tant que TECHNICIEN avec un taux d'activité de 1.0 
+2019-03-21 11:52:57 - INFO  - Embauche de l'employé John Doe diplômé de MASTER en tant que MANAGER avec un taux d'activité de 0.5 
+2019-03-21 11:52:57 - INFO  - Embauche de l'employé John Doe diplômé de MASTER en tant que MANAGER avec un taux d'activité de 0.5 
+2019-03-21 11:52:57 - ERROR - Limite des 100000 matricules atteinte !
+2019-03-21 11:52:57 - INFO  - Embauche de l'employé John Doe diplômé de MASTER en tant que MANAGER avec un taux d'activité de 0.5 
+2019-03-21 11:52:57 - INFO  - Embauche de l'employé John Doe diplômé de BTS_IUT en tant que TECHNICIEN avec un taux d'activité de 1.0 
+2019-03-21 11:52:57 - INFO  - Embauche de l'employé John Doe diplômé de MASTER en tant que MANAGER avec un taux d'activité de 0.5 
+2019-03-21 11:52:57 - ERROR - L'employé de matricule M00001 existe déjà en BDD
+2019-03-21 17:38:56 - INFO  - Starting EmployeStepDefinitions on FR-L3032818 with PID 42100 (started by johan.campion in C:\Users\johan.campion\IdeaProjects\ipi-java-350-ex)
+2019-03-21 17:38:56 - INFO  - No active profile set, falling back to default profiles: default
+2019-03-21 17:39:02 - INFO  - Started EmployeStepDefinitions in 6.653 seconds (JVM running for 9.362)
+2019-03-21 17:39:02 - INFO  - Embauche de l'employé John Doe diplômé de CAP en tant que TECHNICIEN avec un taux d'activité de 1.0 
+2019-03-21 17:39:03 - INFO  - Starting EmployeRepositoryTest on FR-L3032818 with PID 42100 (started by johan.campion in C:\Users\johan.campion\IdeaProjects\ipi-java-350-ex)
+2019-03-21 17:39:03 - INFO  - No active profile set, falling back to default profiles: default
+2019-03-21 17:39:04 - INFO  - Started EmployeRepositoryTest in 0.776 seconds (JVM running for 10.66)
+2019-03-21 17:39:04 - INFO  - Starting EmployeServiceIntegrationTest on FR-L3032818 with PID 42100 (started by johan.campion in C:\Users\johan.campion\IdeaProjects\ipi-java-350-ex)
+2019-03-21 17:39:04 - INFO  - No active profile set, falling back to default profiles: default
+2019-03-21 17:39:05 - INFO  - Started EmployeServiceIntegrationTest in 0.883 seconds (JVM running for 11.741)
+2019-03-21 17:39:05 - INFO  - Embauche de l'employé John Doe diplômé de BTS_IUT en tant que TECHNICIEN avec un taux d'activité de 1.0 
+2019-03-21 17:39:05 - INFO  - Embauche de l'employé John Doe diplômé de MASTER en tant que MANAGER avec un taux d'activité de 0.5 
+2019-03-21 17:39:05 - INFO  - Embauche de l'employé John Doe diplômé de MASTER en tant que MANAGER avec un taux d'activité de 0.5 
+2019-03-21 17:39:05 - ERROR - Limite des 100000 matricules atteinte !
+2019-03-21 17:39:05 - INFO  - Embauche de l'employé John Doe diplômé de MASTER en tant que MANAGER avec un taux d'activité de 0.5 
+2019-03-21 17:39:05 - INFO  - Embauche de l'employé John Doe diplômé de BTS_IUT en tant que TECHNICIEN avec un taux d'activité de 1.0 
+2019-03-21 17:39:05 - INFO  - Embauche de l'employé John Doe diplômé de MASTER en tant que MANAGER avec un taux d'activité de 0.5 
+2019-03-21 17:39:05 - ERROR - L'employé de matricule M00001 existe déjà en BDD

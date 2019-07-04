@@ -1,12 +1,17 @@
 package com.ipiecoles.java.java350.model;
 
+import com.ipiecoles.java.java350.exception.EmployeException;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import java.text.DecimalFormat;
 import java.time.DayOfWeek;
 import java.time.LocalDate;
 import java.util.Objects;
+
+import static jdk.nashorn.internal.objects.NativeMath.round;
 
 @Entity
 public class Employe {
@@ -75,11 +80,11 @@ public class Employe {
     }
 
     public Integer getNbRtt(LocalDate d){
-        int i1 = d.isLeapYear() ? 365 : 366;
+        int i1 = d.isLeapYear() ? 366 : 365;
         int var = 104;
         switch (LocalDate.of(d.getYear(),1,1).getDayOfWeek()){
             case THURSDAY: if(d.isLeapYear()) var =  var + 1; break;
-            case FRIDAY: if(d.isLeapYear()) var =  var + 2; else var =  var + 1;
+            case FRIDAY: if(d.isLeapYear()){ var =  var + 2;break;} else{ var =  var + 1;break;}
             case SATURDAY: var = var + 1; break;
         }
         int monInt = (int) Entreprise.joursFeries(d).stream().filter(localDate -> localDate.getDayOfWeek().getValue() <= DayOfWeek.FRIDAY.getValue()).count();
@@ -120,8 +125,20 @@ public class Employe {
         return Math.round(prime * this.tempsPartiel * 100)/100.0;
     }
 
-    //Augmenter salaire
-    //public void augmenterSalaire(double pourcentage){}
+    public void augmenterSalaire(double pourcentage){
+
+        Double salaire = 0.00;
+
+        if(this.salaire != null && pourcentage >= 0){
+            salaire = (double)Math.round(this.salaire*(1+pourcentage/100)*100)/100;
+        }else if(this.salaire == null){
+            salaire = 0.00;
+        }else{
+            throw new IllegalArgumentException("Le pourcentage d'augmentation ne peut pas être négative !");
+        }
+
+        this.setSalaire(salaire);
+    }
 
     public Long getId() {
         return id;
